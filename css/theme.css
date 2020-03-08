@@ -1,0 +1,66 @@
+.centered-text {
+	text-align: center;
+}
+.rings {
+	margin: 0 auto;
+	width: auto;
+	line-height: 15px;
+	padding-top: 15px;
+}
+.rings img {
+	height: 40px;
+}
+.rings td {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+}
+.rings input {
+	visibility: hidden;
+	position: absolute;
+}
+.rings .lock {
+	visibility: hidden;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+}
+.rings input:checked + .lock {
+	visibility: visible;
+}
+.rings span, .rings a {
+	visibility: hidden;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: -50%;
+	margin-left: -50%;
+	width: 300%
+}
+.rings a {
+	text-decoration: none;
+}
+.rings td:hover span, .rings td:hover a {
+	visibility: visible;
+}
+.rings span::after, .rings a::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+td.sep {
+	font-size: 50px;
+}
+.credit {
+	padding-top: 15px;
+}

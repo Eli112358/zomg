@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Eli112358 - zOMG! Rings</title>
+		<link rel="stylesheet" type="text/css" href="https://eli112358.github.io/stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="https://eli112358.github.io/stylesheets/pygment_trac.css" media="screen">
+		<link href="css/theme.css" rel="stylesheet">
+		<script src="https://eli112358.github.io/javascripts/fetchRemoteFile.js"></script>
+		<script src="js/rings.js"></script>
+	</head>
+	<body onload="load()">
+		<header>
+			<div class="container">
+				<h1>Eli112358</h1>
+				<h2>zOMG! Rings</h2>
+				<section id="header"></section>
+			</div>
+		</header>
+		<div class="container">
+			<section id="main_content" class="centered-text">
+				<div class="button-bar">
+					<button class="button btn" type="button" name="reset" onclick="javascript:reset()">Reset</button>
+				</div>
+				<table class="rings centered">
+					<tbody>
+						<tr>
+							<td class="right-just">
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/5/55/Angel_%28large%29.png/revision/latest">
+								<span>Angel<br/>+3 Luck</span>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Solar_Rays">Solar Rays<br/>80 Dmg-R, 3s</a>
+								<input type="checkbox" id="Solar_Rays">
+								<img src="images/lock.png" class="lock">
+								<label for="Solar_Rays"><img src="https://vignette.wikia.nocookie.net/zomg/images/d/db/Ring_Solar_Rays_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Hunter's_Bow">Hunter's Bow<br/>50 Dmg-R, 2s</a>
+								<input type="checkbox" id="Hunters_Bow">
+								<img src="images/lock.png" class="lock">
+								<label for="Hunters_Bow"><img src="https://vignette.wikia.nocookie.net/zomg/images/a/ae/Ring_Hunter's_Bow_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Healing_Halo">Healing Halo<br/>150 HP, AoE-C, 15s</a>
+								<input type="checkbox" id="Healing_Halo">
+								<img src="images/lock.png" class="lock">
+								<label for="Healing_Halo"><img src="https://vignette.wikia.nocookie.net/zomg/images/2/23/Ring_Healing_Halo_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Wish">Wish<br/>170 HP, Aoe-T, 4s</a>
+								<input type="checkbox" id="Wish">
+								<img src="images/lock.png" class="lock">
+								<label for="Wish"><img src="https://vignette.wikia.nocookie.net/zomg/images/e/e6/Ring_Wish_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">|</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Shuriken">Shuriken<br/>75 Dmg-R, AoE-T, 2s</a>
+								<input type="checkbox" id="Shuriken">
+								<img src="images/lock.png" class="lock">
+								<label for="Shuriken"><img src="https://vignette.wikia.nocookie.net/zomg/images/9/90/Ring_Shuriken_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Mantis">Mantis<br/>90 Dmg-M, 2s</a>
+								<input type="checkbox" id="Mantis">
+								<img src="images/lock.png" class="lock">
+								<label for="Mantis"><img src="https://vignette.wikia.nocookie.net/zomg/images/3/30/Ring_Mantis_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Divinity">Divinity<br/>Stamina Regen, Luck</a>
+								<input type="checkbox" id="Divinity">
+								<img src="images/lock.png" class="lock">
+								<label for="Divinity"><img src="https://vignette.wikia.nocookie.net/zomg/images/a/a5/Ring_Divinity_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Ghost">Ghost<br/>Dodge Debuff</a>
+								<input type="checkbox" id="Ghost">
+								<img src="images/lock.png" class="lock">
+								<label for="Ghost"><img src="https://vignette.wikia.nocookie.net/zomg/images/d/d8/Ring_Ghost_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/7/73/Ninja_%28large%29.png/revision/latest">
+								<span>Ninja<br/>+30 Acc, +30 Dodge</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="right-just">
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/8/80/Athlete_%28large%29.png/revision/latest">
+								<span>Athlete<br/>Debuff Resist</span>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Bump">Bump<br/>110 Dmg-M, 3s</a>
+								<input type="checkbox" id="Bump">
+								<img src="images/lock.png" class="lock">
+								<label for="Bump"><img src="https://vignette.wikia.nocookie.net/zomg/images/6/68/Ring_Bump_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Taunt">Taunt<br/>CC: Agro, AoE, Dodge Debuff</a>
+								<input type="checkbox" id="Taunt">
+								<img src="images/lock.png" class="lock">
+								<label for="Taunt"><img src="https://vignette.wikia.nocookie.net/zomg/images/0/04/Ring_Taunt_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Turtle">Turtle<br/>Armor</a>
+								<input type="checkbox" id="Turtle">
+								<img src="images/lock.png" class="lock">
+								<label for="Turtle"><img src="https://vignette.wikia.nocookie.net/zomg/images/b/bc/Ring_Turtle_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Fitness">Fitness<br/>Passive Overall Buff</a>
+								<input type="checkbox" id="Fitness">
+								<img src="images/lock.png" class="lock">
+								<label for="Fitness"><img src="https://vignette.wikia.nocookie.net/zomg/images/2/20/Ring_Fitness_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">|</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Shark_Attack">Shark Attack<br/>100 Dmg-R, DoT, 5s</a>
+								<input type="checkbox" id="Shark_Attack">
+								<img src="images/lock.png" class="lock">
+								<label for="Shark_Attack"><img src="https://vignette.wikia.nocookie.net/zomg/images/6/66/Ring_Shark_Attack_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Slash">Slash<br/>100 Dmg-M, AoE-Cone, 3s</a>
+								<input type="checkbox" id="Slash">
+								<img src="images/lock.png" class="lock">
+								<label for="Slash"><img src="https://vignette.wikia.nocookie.net/zomg/images/3/3d/Ring_Slash_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Quicksand">Quicksand<br/>CC: Root, AoE</a>
+								<input type="checkbox" id="Quicksand">
+								<img src="images/lock.png" class="lock">
+								<label for="Quicksand"><img src="https://vignette.wikia.nocookie.net/zomg/images/2/2d/Ring_Quicksand_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Keen_Aye">Keen Aye<br/>Acc Buff</a>
+								<input type="checkbox" id="Keen_Aye">
+								<img src="images/lock.png" class="lock">
+								<label for="Keen_Aye"><img src="https://vignette.wikia.nocookie.net/zomg/images/d/d9/Ring_Keen_Aye_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/f/fe/Pirate_%28large%29.png/revision/latest">
+								<span>Pirate<br/>+10% Ps Armor</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="right-just">
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/7/77/Chef_%28large%29.png/revision/latest">
+								<span>Chef<br/>+70 Dodge</span>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Hack">Hack<br/>140 Dmg-M, DoT, 4s</a>
+								<input type="checkbox" id="Hack">
+								<img src="images/lock.png" class="lock">
+								<label for="Hack"><img src="https://vignette.wikia.nocookie.net/zomg/images/c/c8/Ring_Hack_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Knife_Sharpen">Knife Sharpen<br/>Acc Debuff</a>
+								<input type="checkbox" id="Knife_Sharpen">
+								<img src="images/lock.png" class="lock">
+								<label for="Knife_Sharpen"><img src="https://vignette.wikia.nocookie.net/zomg/images/c/c0/Ring_Knife_Sharpen_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Pot_Lid">Pot Lid<br/>Ps Armor, Reflect</a>
+								<input type="checkbox" id="Pot_Lid">
+								<img src="images/lock.png" class="lock">
+								<label for="Pot_Lid"><img src="https://vignette.wikia.nocookie.net/zomg/images/7/77/Ring_Pot_Lid_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Meat">Meat<br/>400 HP, Self Only, 15s</a>
+								<input type="checkbox" id="Meat">
+								<img src="images/lock.png" class="lock">
+								<label for="Meat"><img src="https://vignette.wikia.nocookie.net/zomg/images/5/50/Ring_Meat_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">|</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Hot_Foot">Hot Foot<br/>80 Dmg-R, 3s, R(AoE-T, Dodge Debuff)</a>
+								<input type="checkbox" id="Hot_Foot">
+								<img src="images/lock.png" class="lock">
+								<label for="Hot_Foot"><img src="https://vignette.wikia.nocookie.net/zomg/images/5/57/Ring_Hot_Foot_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Heavy_Water_Balloon">Heavy Water Balloon<br/>80 Dmg-R, AoE-T, 6s</a>
+								<input type="checkbox" id="Heavy_Water_Balloon">
+								<img src="images/lock.png" class="lock">
+								<label for="Heavy_Water_Balloon"><img src="https://vignette.wikia.nocookie.net/zomg/images/1/10/Ring_Heavy_Water_Balloon_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Gumshoe">Gumshoe<br/>AoE Speed Debuff</a>
+								<input type="checkbox" id="Gumshoe">
+								<img src="images/lock.png" class="lock">
+								<label for="Gumshoe"><img src="https://vignette.wikia.nocookie.net/zomg/images/b/b4/Ring_Gumshoe_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Fleet_Feet">Fleet Feet<br/>Speed & Will Buff</a>
+								<input type="checkbox" id="Fleet_Feet">
+								<img src="images/lock.png" class="lock">
+								<label for="Fleet_Feet"><img src="https://vignette.wikia.nocookie.net/zomg/images/4/48/Ring_Fleet_Feet_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/1/13/Prankster_%28large%29.png/revision/latest">
+								<span>Prankster<br/>+300 Max HP</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="right-just">
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/a/a4/Demon_%28large%29.png/revision/latest">
+								<span>Demon<br/>+2 HP Regen</span>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Fire_Rain">Fire Rain<br/>120 Dmg-M, AoE-C, DoT, Will Debuff, 10s</a>
+								<input type="checkbox" id="Fire_Rain">
+								<img src="images/lock.png" class="lock">
+								<label for="Fire_Rain"><img src="https://vignette.wikia.nocookie.net/zomg/images/3/3f/Ring_Fire_Rain_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Scaredy_Cat">Scaredy Cat<br/>CC: Repel, AoE</a>
+								<input type="checkbox" id="Scaredy_Cat">
+								<img src="images/lock.png" class="lock">
+								<label for="Scaredy_Cat"><img src="https://vignette.wikia.nocookie.net/zomg/images/b/b7/Ring_Scaredy_Cat_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Teflon_Spray">Teflon Spray<br/>Ps Armor, HR(Dodge Buff, Reflect)</a>
+								<input type="checkbox" id="Teflon_Spray">
+								<img src="images/lock.png" class="lock">
+								<label for="Teflon_Spray"><img src="https://vignette.wikia.nocookie.net/zomg/images/8/88/Ring_Teflon_Spray_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Iron_Will">Iron Will<br/>Will Buff HR(Reflect)</a>
+								<input type="checkbox" id="Iron_Will">
+								<img src="images/lock.png" class="lock">
+								<label for="Iron_Will"><img src="https://vignette.wikia.nocookie.net/zomg/images/5/56/Ring_Iron_Will_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">|</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Guns,_Guns,_Guns">Guns, Guns, Guns<br/>70 Dmg-R, R(AoE-T), 2s</a>
+								<input type="checkbox" id="Guns_Guns_Guns">
+								<img src="images/lock.png" class="lock">
+								<label for="Guns_Guns_Guns"><img src="https://vignette.wikia.nocookie.net/zomg/images/0/0c/Ring_Guns%2C_Guns%2C_Guns_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Duct_Tape">Duct Tape<br/>CC: Sleep, AoE</a>
+								<input type="checkbox" id="Duct_Tape">
+								<img src="images/lock.png" class="lock">
+								<label for="Duct_Tape"><img src="https://vignette.wikia.nocookie.net/zomg/images/9/98/Ring_Duct_Tape_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Improbability_Sphere">Improbability Sphere<br/>Ps Armor, Reflect</a>
+								<input type="checkbox" id="Improbability_Sphere">
+								<img src="images/lock.png" class="lock">
+								<label for="Improbability_Sphere"><img src="https://vignette.wikia.nocookie.net/zomg/images/1/11/Ring_Improbability_Sphere_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_My_Density">My Density<br/>Mass Buff, HR(Ps Armor)</a>
+								<input type="checkbox" id="My_Density">
+								<img src="images/lock.png" class="lock">
+								<label for="My_Density"><img src="https://vignette.wikia.nocookie.net/zomg/images/8/8d/Ring_My_Density_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/6/62/Spacetrooper_%28large%29.png/revision/latest">
+								<span>Space Trooper<br/>+70 Acc</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="right-just">
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/9/9a/Medic_%28large%29.png/revision/latest">
+								<span>Medic<br/>+48 Speed</span>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Adrenaline">Adrenaline<br/>Dodge Debuff</a>
+								<input type="checkbox" id="Adrenaline">
+								<img src="images/lock.png" class="lock">
+								<label for="Adrenaline"><img src="https://vignette.wikia.nocookie.net/zomg/images/3/31/Ring_Adrenaline_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Bandage">Bandage<br/>250 HP, HoT, 5s</a>
+								<input type="checkbox" id="Bandage">
+								<img src="images/lock.png" class="lock">
+								<label for="Bandage"><img src="https://vignette.wikia.nocookie.net/zomg/images/f/fe/Ring_Bandage_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Diagnose">Diagnose<br/>120 HP, AoE-C, 8s</a>
+								<input type="checkbox" id="Diagnose">
+								<img src="images/lock.png" class="lock">
+								<label for="Diagnose"><img src="https://vignette.wikia.nocookie.net/zomg/images/7/7b/Ring_Diagnose_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Defibrillate">Defibrillate<br/>Revive, 300HP, 60s</a>
+								<input type="checkbox" id="Defibrillate">
+								<img src="images/lock.png" class="lock">
+								<label for="Defibrillate"><img src="https://vignette.wikia.nocookie.net/zomg/images/7/79/Ring_Defibrillate_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">|</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Dervish">Dervish<br/>80 Dmg-M, AoE-C, Kb, 5s</a>
+								<input type="checkbox" id="Dervish">
+								<img src="images/lock.png" class="lock">
+								<label for="Dervish"><img src="https://vignette.wikia.nocookie.net/zomg/images/9/9f/Ring_Dervish_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Hornets_Nest">Hornet's Nest<br/>60 Dmg-R, DoT, 6s, HR(Repel)</a>
+								<input type="checkbox" id="Hornets_Nest">
+								<img src="images/lock.png" class="lock">
+								<label for="Hornets_Nest"><img src="https://vignette.wikia.nocookie.net/zomg/images/5/5b/Ring_Hornet%27s_Nest_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Rock_Armor">Rock Armor<br/>Armor</a>
+								<input type="checkbox" id="Rock_Armor">
+								<img src="images/lock.png" class="lock">
+								<label for="Rock_Armor"><img src="https://vignette.wikia.nocookie.net/zomg/images/2/2a/Ring_Rock_Armor_Alt.png/revision/latest"></label>
+							</td>
+							<td>
+								<a target="_blank" href="https://zomg.fandom.com/wiki/Ring:_Coyote_Spirit">Coyote Spirit<br/>Speed & Dodge Buff, HR(Luck)</a>
+								<input type="checkbox" id="Coyote_Spirit">
+								<img src="images/lock.png" class="lock">
+								<label for="Coyote_Spirit"><img src="https://vignette.wikia.nocookie.net/zomg/images/3/3a/Ring_Coyote_Spirit_Alt.png/revision/latest"></label>
+							</td>
+							<td class="sep">=</td>
+							<td>
+								<img src="https://vignette.wikia.nocookie.net/zomg/images/8/8d/Shaman_%28large%29.png/revision/latest">
+								<span>Shaman<br/>+1 SP Regen, Will</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="credit">
+					<a href="http://gaiaonline.com/">Gaia Online</a>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

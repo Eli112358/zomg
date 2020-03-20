@@ -7,69 +7,12 @@
 	line-height: 15px;
 	padding-top: 15px;
 }
-.rings img {
-	height: 40px;
-}
 .rings td {
 	position: relative;
 	display: inline-block;
 	padding: 0;
 }
-.rings input {
-	visibility: hidden;
-	position: absolute;
-}
-.rings .lock {
-	visibility: hidden;
-	position: absolute;
-	left: 3%;
-	top: 3%;
-}
-.rings input:checked + .lock {
-	visibility: visible;
-}
-.rings span, .rings a {
-	visibility: hidden;
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 5px 0;
-	border-radius: 6px;
-	position: absolute;
-	z-index: 1;
-	bottom: 100%;
-	left: -50%;
-	margin-left: -50%;
-	width: 300%
-}
-.rings a {
-	text-decoration: none;
-}
-.rings td:hover span, .rings td:hover a {
-	visibility: visible;
-}
-.rings span::after, .rings a::after {
-	content: " ";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: black transparent transparent transparent;
-}
-.ring {
-	margin-left: 2px;
-	margin-right: 2px;
-}
-.ring label {
-	display: inline-block;
-}
-.ring label img {
-	border: gray solid;
-	border-radius: 3px;
-}
-td.sep {
+.rings td.sep {
 	width: 5px;
 }
 .rings .sep-left {
@@ -79,4 +22,63 @@ td.sep {
 .rings .sep-right {
 	border-right: white dotted;
 	padding-right: 3px;
+}
+.ring {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.ring img {
+	height: 40px;
+}
+.ring a,
+.ring span,
+.ring .lock,
+.ring input {
+	visibility: hidden;
+	position: absolute;
+}
+.ring .lock {
+	left: 3%;
+	top: 3%;
+}
+.ring input:checked + .lock {
+	visibility: visible;
+}
+.ring a,
+.ring span {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	z-index: 1;
+	bottom: 100%;
+	left: -50%;
+	margin-left: -50%;
+	width: 300%
+}
+.ring a {
+	text-decoration: none;
+}
+.ring:hover a,
+.ring:hover span {
+	visibility: visible;
+}
+.ring a::after,
+.ring span::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+.ring label {
+	display: inline-block;
+}
+.ring label img {
+	border: gray solid;
+	border-radius: 3px;
 }

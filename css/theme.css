@@ -1,4 +1,4 @@
-.centered-text {
+#main_content {
 	text-align: center;
 }
 .rings {
@@ -70,5 +70,13 @@
 	border-radius: 3px;
 }
 td.sep {
-	font-size: 50px;
+	width: 5px;
+}
+.rings .sep-left {
+	border-left: white dotted;
+	padding-left: 3px;
+}
+.rings .sep-right {
+	border-right: white dotted;
+	padding-right: 3px;
 }

@@ -27,11 +27,12 @@
 	margin-left: 2px;
 	margin-right: 2px;
 }
-.ring img {
+.ring img,
+.ring-set img {
 	height: 40px;
 }
 .ring a,
-.ring span,
+.ring-set span,
 .ring .lock,
 .ring input {
 	visibility: hidden;
@@ -45,7 +46,7 @@
 	visibility: visible;
 }
 .ring a,
-.ring span {
+.ring-set span {
 	background-color: black;
 	color: white;
 	text-align: center;
@@ -61,11 +62,11 @@
 	text-decoration: none;
 }
 .ring:hover a,
-.ring:hover span {
+.ring-set:hover span {
 	visibility: visible;
 }
 .ring a::after,
-.ring span::after {
+.ring-set span::after {
 	content: " ";
 	position: absolute;
 	top: 100%;

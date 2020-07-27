@@ -38,7 +38,7 @@ function renderRing(element) {
 	}
 	let id = element.getAttribute('ring');
 	let ring = data.rings[id];
-	let name = ring.hasOwnProperty('full_name') ? ring.full_name : id.replace('_', ' ');
+	let name = ring.hasOwnProperty('full_name') ? ring.full_name : id.replace(/_/g, ' ');
 	let tooltip = document.createElement('a');
 	tooltip.href = `https://zomg.fandom.com/wiki/Ring:_${id}`;
 	tooltip.innerHTML = `${name}<br/>${ring.stats}`;

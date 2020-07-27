@@ -39,8 +39,9 @@ function renderRing(element) {
 	let id = element.getAttribute('ring');
 	let ring = data.rings[id];
 	let name = ring.hasOwnProperty('full_name') ? ring.full_name : id.replace(/_/g, ' ');
+	let url = ring.hasOwnProperty('url') ? ring.url : id;
 	let tooltip = document.createElement('a');
-	tooltip.href = `https://zomg.fandom.com/wiki/Ring:_${id}`;
+	tooltip.href = `https://zomg.fandom.com/wiki/Ring:_${url}`;
 	tooltip.innerHTML = `${name}<br/>${ring.stats}`;
 	tooltip.target = '_blank';
 	let checkbox = document.createElement('input');

@@ -60,6 +60,7 @@ const data = {
 			full_name: "Guns, Guns, Guns",
 			img: "0/0c",
 			stats: "70 Dmg-R, R(AoE-T), 2s",
+			url: "Guns,Guns,Guns",
 		},
 		Hack: {
 			img: "c/c8",
@@ -77,6 +78,7 @@ const data = {
 			full_name: "Hornet's Nest",
 			img: "5/5b",
 			stats: "60 Dmg-R, DoT, 6s, HR(Repel)",
+			url: "Hornet's Nest",
 		},
 		Hot_Foot: {
 			img: "5/57",
@@ -86,6 +88,7 @@ const data = {
 			full_name: "Hunter's Bow",
 			img: "a/ae",
 			stats: "50 Dmg-R, 2s",
+			url: "Hunter's Bow",
 		},
 		Improbability_Sphere: {
 			img: "1/11",
